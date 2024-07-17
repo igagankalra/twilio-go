@@ -4,9 +4,8 @@ go 1.18
 
 require (
 	github.com/kevinburke/go-types v0.0.0-20210723172823-2deba1f80ba7
-	github.com/kevinburke/handlers v0.0.0-20231107221000-2cbf18acad0d
+	github.com/kevinburke/handlers v0.0.0-20220416175136-cbf86af60bb5
 	github.com/kevinburke/rest v0.0.0-20240617045629-3ed0ad3487f0
-	github.com/kevinburke/twilio-go v0.0.0-20240716172313-813590983ccc
 	github.com/ttacon/libphonenumber v1.2.1
 	golang.org/x/net v0.27.0
 	golang.org/x/sync v0.7.0
@@ -19,7 +18,7 @@ require (
 	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/inconshreveable/log15 v3.0.0-testing.5+incompatible // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
-	github.com/mattn/go-isatty v0.0.20 // indirect
+	github.com/mattn/go-isatty v0.0.16 // indirect
 	github.com/ttacon/builder v0.0.0-20170518171403-c099f663e1c2 // indirect
 	golang.org/x/sys v0.22.0 // indirect
 	golang.org/x/term v0.22.0 // indirect
