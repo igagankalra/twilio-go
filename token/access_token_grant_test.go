@@ -11,6 +11,7 @@ const (
 	DEP_ROLE_SID  = "1qaz2wsx3edc4rfv5tgb6yhn7ujm8ik9ol"
 	PUSH_CRED_SID = "cde3xsw2zaq1vfr4bgtnhy6mju78ijhgtf"
 	PROFILE_SID   = "erfergrtugdifuovudsfhguidhgouidrhg"
+		APP_SID    = "asdfghjkl"
 	ROOM_SID      = "erfergrtugdifuovudsfhguidhgouidrhd"
 )
 
