@@ -4,16 +4,18 @@ jobs:
   test:
     strategy:
       matrix:
-        go-version: [1.17.x, 1.18.x, 1.19.x]
+        go-version: [1.22.x]
     runs-on: ubuntu-latest
     steps:
-    - name: Install Go
-      uses: actions/setup-go@v3
-      with:
-        go-version: ${{ matrix.go-version }}
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
       with:
          path: './src/github.com/kevinburke/twilio-go'
+    - name: Install Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: ${{ matrix.go-version }}
+        cache-dependency-path: |
+          ./src/github.com/kevinburke/twilio-go/go.sum
     # staticcheck needs this for GOPATH
     - run: |
         echo "GOPATH=$GITHUB_WORKSPACE" >> $GITHUB_ENV
